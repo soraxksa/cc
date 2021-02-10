@@ -1,0 +1,14 @@
+
+SOURCE = main.cc
+
+CC = g++
+
+COMPILER_FLAGS = 
+
+LINKER_FLAGS = -lSDL2
+
+OUT_NAME = test
+
+all : $(SOURCE)
+	$(CC) $(SOURCE) $(COMPILER_FLAGS) $(LINKER_FLAGS) -o $(OUT_NAME)
+	./$(OUT_NAME)

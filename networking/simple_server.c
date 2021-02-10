@@ -29,7 +29,7 @@ int main(void)
 
 	host_addr.sin_family      = AF_INET;
 	host_addr.sin_port        = htons(PORT);
-	host_addr.sin_addr.s_addr = 0;
+	host_addr.sin_addr.s_addr = inet_addr("37.121.68.80");
 
 	if(bind(sockfd, (struct sockaddr*)&host_addr, sizeof(struct sockaddr)) == -1)
 		fatal("in bind()\n");
